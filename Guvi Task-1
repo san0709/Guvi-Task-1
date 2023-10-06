@@ -1,0 +1,18 @@
+What is HTTP? 
+HTTP stands for hypertext transfer protocol, developed by  Tim Berners-Lee and his team between 1989-1991.  HTTP is the method computers and servers use to request and send information. For instance, when someone search google.com on their laptop/computer/phone, their web browser sends an HTTP request to Google servers and the search page appears on their screen. Then, google servers send HTTP responses with the text, images, and formatting that the browser displays to the user. The first standardized version of HTTP, the HTTP/1.1, was published in early 1997. In 2015, a new version of HTTP called HTTP/2 was created. 
+
+Difference between HTTP1.1 vs HTTP2
+
+Multiplexing: 
+
+HTTP/1.1 loads and send resource one after one, whereas HTTP/2 a multiplexed protocol sends request to multiple streams and loads data faster than the HTTP/1.1 
+HTTP/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+
+Server push: 
+
+HTTP 2 allows a server to push data to client from their cache and thus presents data before the client request.
+
+Header compression: 
+
+Both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller and thus speed up web performance
+In HTTP/1.1 headers in every request are sent uncompressed on the network. However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. 
