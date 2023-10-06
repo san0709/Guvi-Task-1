@@ -1,4 +1,5 @@
-What is HTTP? 
+Question 1: What is HTTP? 
+
 HTTP stands for hypertext transfer protocol, developed by  Tim Berners-Lee and his team between 1989-1991.  HTTP is the method computers and servers use to request and send information. For instance, when someone search google.com on their laptop/computer/phone, their web browser sends an HTTP request to Google servers and the search page appears on their screen. Then, google servers send HTTP responses with the text, images, and formatting that the browser displays to the user. The first standardized version of HTTP, the HTTP/1.1, was published in early 1997. In 2015, a new version of HTTP called HTTP/2 was created. 
 
 Difference between HTTP1.1 vs HTTP2
@@ -16,3 +17,34 @@ Header compression:
 
 Both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller and thus speed up web performance
 In HTTP/1.1 headers in every request are sent uncompressed on the network. However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2 : Objects & its Internal Representation in JAVA.
+
+Objects are important data types in javascript. Objects are different than primitive datatypes (i.e. number, string, boolean, etc.). Primitive data types contain one value but Objects can hold many values in form of Key: value pair.
+
+Object & Properties representatios:
+
+Example 1: syntax --> objectName.propertyName
+
+var employees = new Object();
+employees.name = 'Sandhiya';
+employees.id= 123
+employess.gender= 'Female'
+------------------------------------------
+Example 2 : syntax --> objectName = {properties};
+
+let students = {name: 'deeksha', roll no:'22', class:'10th'};
+----------------------------------------
+Example 3 : syntax --> fuction object()
+			{
+				properties
+			}
+function vehicle(name, maker) {
+   this.name = name;
+   this.maker = maker;
+}
+let car1 = new Vehicle(’Fiesta’, 'Ford’);
+let car2 = new Vehicle(’Santa Fe’, 'Hyundai’)
+console.log(car1.name);    //Output: Fiesta
+console.log(car2.name);    //Output: Santa Fe
